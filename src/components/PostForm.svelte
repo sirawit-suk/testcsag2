@@ -5,7 +5,7 @@
   import { user, pages } from "../store.js";
   const handlePostClick = () => {
     if (active && topic && content) {
-      fetch("http://localhost:1234/api/posts/", {
+      fetch("https://csag-pop.herokuapp.com/api/posts/", {
         method: "POST",
         body: JSON.stringify({
           name: $user.username,
